@@ -179,7 +179,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                provider.toggleProduct(widget.product);
+                final provider = CartProvider.of(context, listen: false);
+                provider.toggleProduct(
+                    widget.product); // Add the product to the cart
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => CartDetails()));
               },
@@ -192,7 +194,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.shopping_cart), // Add your icon here
+                  Icon(Icons.check_outlined), // Add your icon here
                   SizedBox(
                       width: 8), // Add some spacing between the icon and text
                   Text('Add to Cart'),

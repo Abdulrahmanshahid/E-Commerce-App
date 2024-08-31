@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 buildMarriageHall() => GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: (120 / 160), // Corrected typo
+        childAspectRatio: (120 / 160),
         crossAxisSpacing: 12,
         mainAxisSpacing: 12,
       ),

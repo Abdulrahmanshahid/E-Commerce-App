@@ -16,9 +16,6 @@ class _CartDetailsState extends State<CartDetails> {
     final finalcart = provider.cart;
 
     Widget _buildProductQuantity(IconData icon, int index) {
-      final provider =
-          CartProvider.of(context, listen: false); // Obtain provider instance
-
       return GestureDetector(
         onTap: () {
           if (icon == Icons.add) {
@@ -26,8 +23,6 @@ class _CartDetailsState extends State<CartDetails> {
           } else {
             provider.decrementQuantity(index);
           }
-          provider
-              .notifyListeners(); // Notify listeners after updating quantity
         },
         child: Container(
           decoration: BoxDecoration(
@@ -77,9 +72,7 @@ class _CartDetailsState extends State<CartDetails> {
                       children: [
                         SlidableAction(
                           onPressed: (context) {
-                            finalcart.removeAt(index);
-                            provider
-                                .notifyListeners(); // Notify listeners of change
+                            provider.removeProduct(index);
                           },
                           backgroundColor: Colors.red,
                           foregroundColor: Colors.white,
@@ -108,7 +101,7 @@ class _CartDetailsState extends State<CartDetails> {
                       trailing: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          _buildProductQuantity(Icons.add, index),
+                          _buildProductQuantity(Icons.remove, index),
                           const SizedBox(width: 10),
                           Text(
                             finalcart[index].quantity.toString(),
@@ -119,7 +112,7 @@ class _CartDetailsState extends State<CartDetails> {
                             ),
                           ),
                           const SizedBox(width: 10),
-                          _buildProductQuantity(Icons.remove, index),
+                          _buildProductQuantity(Icons.add, index),
                         ],
                       ),
                       tileColor: Colors.grey.shade200,
@@ -130,6 +123,44 @@ class _CartDetailsState extends State<CartDetails> {
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.red,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                '\$${provider.totalPrice.toStringAsFixed(2)}',
+                style: const TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  // Navigate to the next screen or perform checkout
+                },
+                style: ElevatedButton.styleFrom(
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    Icon(Icons.shopping_cart),
+                    SizedBox(width: 8),
+                    Text('Checkout'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

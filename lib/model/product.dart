@@ -14,6 +14,6 @@ class Product {
     required this.image,
     required this.description,
     required this.price,
-    required this.quantity,
+    this.quantity = 1,
   });
 }
