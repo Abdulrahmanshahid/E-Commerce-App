@@ -19,11 +19,13 @@ class _ProductCardState extends State<ProductCard> {
 
     return Container(
       width: MediaQuery.of(context).size.width / 2,
+      height: 250,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8.0),
         color: Colors.grey.withOpacity(0.1),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -38,20 +40,28 @@ class _ProductCardState extends State<ProductCard> {
             ],
           ),
           SizedBox(
-            height: 100,
+            height: 140,
             width: 130,
             child: Image.asset(
               widget.product.image,
               fit: BoxFit.cover,
             ),
           ),
-          Text(
-            widget.product.name,
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          Flexible(
+            child: Text(
+              widget.product.name,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              overflow: TextOverflow.ellipsis, // Ellipsis for long names
+            ),
           ),
-          Text(
-            widget.product.category,
-            style: const TextStyle(fontSize: 12, color: Colors.red),
+          Flexible(
+            child: Text(
+              widget.product.category,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 12, color: Colors.red),
+              overflow: TextOverflow.ellipsis, // Ellipsis for long categories
+            ),
           ),
           Text(
             '\$${widget.product.price}',

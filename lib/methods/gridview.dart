@@ -7,9 +7,9 @@ import '../Widget/productcard.dart';
 Widget buildAllProducts() => GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: (120 / 160),
-        crossAxisSpacing: 12,
-        mainAxisSpacing: 12,
+        childAspectRatio: (2 / 3.5), // Adjusted aspect ratio for better fit
+        crossAxisSpacing: 14,
+        mainAxisSpacing: 14,
       ),
       scrollDirection: Axis.vertical,
       itemCount: MyProduct.allProducts.length,

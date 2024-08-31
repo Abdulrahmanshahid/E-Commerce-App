@@ -4,92 +4,92 @@ class MyProduct {
   static List<Product> allProducts = [
     Product(
         id: 1,
-        name: 'Razan Hotels',
+        name: 'Heritage Leather Boots',
         category: 'Trending now',
-        image: 'assets/images/hotel1.jpg',
+        image: 'assets/images/Boot1.jpeg',
         description:
-            'Indulge in the epitome of luxury at our hotel, where opulent suites, gourmet dining, and unparalleled hospitality await, promising an unforgettable stay.',
+            ' Classic brown leather boots with a cap-toe design and broguing, perfect for a stylish yet rugged look.',
         price: 280.00,
         quantity: 1),
     Product(
         id: 2,
-        name: 'Faizan Hotels',
+        name: 'Urban Trek Boot',
         category: 'Trending now',
-        image: 'assets/images/hotel2.jpg',
+        image: 'assets/images/Boot2.jpeg',
         description:
-            'Discover a serene oasis in the heart of the city at our hotel, where modern comforts blend seamlessly with traditional charm, offering a tranquil retreat for discerning guests.',
+            'Beige low-top sneakers with side stripes and a rugged sole, combining comfort with a modern aesthetic.',
         price: 180.00,
         quantity: 1),
     Product(
         id: 3,
-        name: 'Ramzan Hotels',
+        name: 'Luxe Platform Boot',
         category: 'Trending now',
-        image: 'assets/images/hotel3.jpg',
+        image: 'assets/images/Boot3.jpeg',
         description:
-            'Experience true sophistication at our hotel, where every detail is meticulously crafted to provide a lavish escape, featuring stunning architecture, exquisite cuisine, and personalized service.',
+            ' Beige platform sneakers with a mix of leather and fabric, offering a chic and elevated casual style.',
         price: 380.00,
         quantity: 1),
     Product(
         id: 4,
-        name: 'Ghazan Hotels',
+        name: 'Vintage Combat Boots',
         category: 'Trending now',
-        image: 'assets/images/hotel4.jpg',
+        image: 'assets/images/Boot4.jpeg',
         description:
-            'Elevate your stay with us to new heights of luxury, where panoramic views, lavish amenities, and exceptional service redefine the art of hospitality, ensuring an unforgettable experience',
+            'Off-white combat boots with a lace-up design, block heel, and buckle detail, blending vintage and modern styles.',
         price: 230.00,
         quantity: 1),
     Product(
         id: 5,
-        name: 'AR Hotels',
+        name: 'Steampunk Artisan Boots',
         category: 'Trending now',
-        image: 'assets/images/hotel5.jpg',
+        image: 'assets/images/Boot5.jpeg',
         description:
-            'Immerse yourself in a world of elegance and refinement at our hotel, where timeless beauty meets contemporary comfort, creating a haven of relaxation and rejuvenation for every guest.',
+            'Brown leather boots with multiple straps, buckles, and studs, featuring a unique steampunk-inspired design.',
         price: 180.00,
         quantity: 1),
     Product(
         id: 6,
-        name: 'Babar Marque',
+        name: 'Velocity Glide Sneakers',
         category: 'Trending now',
-        image: 'assets/images/weeding1.jpg',
+        image: 'assets/images/Sneakers1.jpeg',
         description:
-            'Celebrate your special day in style at our exquisite marriage hall, featuring elegant décor, spacious banquet halls, and impeccable service, ensuring a wedding day dreams are made of.',
+            'Sleek black sneakers with a breathable mesh upper and cushioned sole, designed for swift, effortless movement.',
         price: 380.00,
         quantity: 1),
     Product(
         id: 7,
-        name: 'Saqi Marque',
+        name: 'Urban Edge Runners',
         category: 'Trending now',
-        image: 'assets/images/weeding2.jpg',
+        image: 'assets/images/Sneakers6.jpeg',
         description:
-            'Create cherished memories at our enchanting marriage hall, where picturesque surroundings, customizable event spaces, and attentive staff come together to make your wedding day truly magical',
+            'Grey and white sneakers with bold side panels and a flexible midsole, perfect for city explorations and casual outings.',
         price: 280.00,
         quantity: 1),
     Product(
         id: 8,
-        name: 'Shahi Marque',
+        name: 'EcoFlex Trainers',
         category: 'Trending now',
-        image: 'assets/images/weeding3.jpg',
+        image: 'assets/images/Sneakers3.jpeg',
         description:
-            'Say i do in the lap of luxury at our prestigious marriage hall, offering grand ballrooms, gourmet catering, and personalized planning services to make your wedding celebration unforgettable.',
+            'Earth-toned sneakers crafted from recycled materials, featuring a minimalist design with maximum comfort.',
         price: 580.00,
         quantity: 1),
     Product(
         id: 9,
-        name: 'Dua Marque',
+        name: 'DNeon Pulse Kicks',
         category: 'Trending now',
-        image: 'assets/images/weeding4.jpg',
+        image: 'assets/images/Sneakers4.jpeg',
         description:
-            'Experience the wedding of your dreams at our stunning marriage hall, where timeless elegance meets modern amenities, providing the perfect backdrop for a day filled with love, laughter, and joy.',
+            ' Vibrant neon sneakers with reflective accents and a cushioned footbed, adding a pop of color and energy to any outfit.',
         price: 780.00,
         quantity: 1),
     Product(
         id: 10,
-        name: 'Basit Marque',
+        name: 'Retro Racer Sneakers',
         category: 'Trending now',
-        image: 'assets/images/weeding5.jpg',
+        image: 'assets/images/Sneakers5.jpeg',
         description:
-            '"Host the wedding of a lifetime at our exclusive marriage hall, where meticulous attention to detail, exquisite décor, and unparalleled service ensure that every moment is nothing short of perfection',
+            'Classic design with a retro color scheme and a padded collar, merging vintage style with modern performance.',
         price: 480.00,
         quantity: 1),
   ];
@@ -97,95 +97,95 @@ class MyProduct {
   static List<Product> marraigeHallList = [
     Product(
         id: 1,
-        name: 'Babar Marque',
+        name: 'Velocity Glide Sneakers',
         category: 'Trending now',
-        image: 'assets/images/weeding1.jpg',
+        image: 'assets/images/Sneakers1.jpeg',
         description:
-            'Celebrate your special day in style at our exquisite marriage hall, featuring elegant décor, spacious banquet halls, and impeccable service, ensuring a wedding day dreams are made of.',
+            'Sleek black sneakers with a breathable mesh upper and cushioned sole, designed for swift, effortless movement.',
         price: 380.00,
         quantity: 1),
     Product(
         id: 2,
-        name: 'Saqi Marque',
+        name: 'Urban Edge Runners',
         category: 'Trending now',
-        image: 'assets/images/weeding2.jpg',
+        image: 'assets/images/Sneakers6.jpeg',
         description:
-            'Create cherished memories at our enchanting marriage hall, where picturesque surroundings, customizable event spaces, and attentive staff come together to make your wedding day truly magical',
+            'Grey and white sneakers with bold side panels and a flexible midsole, perfect for city explorations and casual outings.',
         price: 280.00,
         quantity: 1),
     Product(
         id: 3,
-        name: 'Shahi Marque',
+        name: 'EcoFlex Trainers',
         category: 'Trending now',
-        image: 'assets/images/weeding3.jpg',
+        image: 'assets/images/Sneakers3.jpeg',
         description:
-            'Say i do in the lap of luxury at our prestigious marriage hall, offering grand ballrooms, gourmet catering, and personalized planning services to make your wedding celebration unforgettable.',
+            'Earth-toned sneakers crafted from recycled materials, featuring a minimalist design with maximum comfort.',
         price: 580.00,
         quantity: 1),
     Product(
         id: 4,
-        name: 'Dua Marque',
+        name: 'DNeon Pulse Kicks',
         category: 'Trending now',
-        image: 'assets/images/weeding4.jpg',
+        image: 'assets/images/Sneakers4.jpeg',
         description:
-            'Experience the wedding of your dreams at our stunning marriage hall, where timeless elegance meets modern amenities, providing the perfect backdrop for a day filled with love, laughter, and joy.',
+            ' Vibrant neon sneakers with reflective accents and a cushioned footbed, adding a pop of color and energy to any outfit.',
         price: 780.00,
         quantity: 1),
     Product(
         id: 5,
-        name: 'Basit Marque',
+        name: 'Retro Racer Sneakers',
         category: 'Trending now',
-        image: 'assets/images/weeding5.jpg',
+        image: 'assets/images/Sneakers5.jpeg',
         description:
-            '"Host the wedding of a lifetime at our exclusive marriage hall, where meticulous attention to detail, exquisite décor, and unparalleled service ensure that every moment is nothing short of perfection',
-        price: 280.00,
+            'Classic design with a retro color scheme and a padded collar, merging vintage style with modern performance.',
+        price: 480.00,
         quantity: 1),
   ];
 
   static List<Product> hotelsList = [
     Product(
         id: 1,
-        name: 'Razan Hotels',
+        name: 'Heritage Leather Boots',
         category: 'Trending now',
-        image: 'assets/images/hotel1.jpg',
+        image: 'assets/images/Boot1.jpeg',
         description:
-            'Indulge in the epitome of luxury at our hotel, where opulent suites, gourmet dining, and unparalleled hospitality await, promising an unforgettable stay.',
+            ' Classic brown leather boots with a cap-toe design and broguing, perfect for a stylish yet rugged look.',
         price: 280.00,
         quantity: 1),
     Product(
         id: 2,
-        name: 'Faizan Hotels',
+        name: 'Urban Trek Boot',
         category: 'Trending now',
-        image: 'assets/images/hotel2.jpg',
+        image: 'assets/images/Boot2.jpeg',
         description:
-            'Discover a serene oasis in the heart of the city at our hotel, where modern comforts blend seamlessly with traditional charm, offering a tranquil retreat for discerning guests.',
-        price: 380.00,
-        quantity: 1),
-    Product(
-        id: 3,
-        name: 'Ramzan Hotels',
-        category: 'Trending now',
-        image: 'assets/images/hotel3.jpg',
-        description:
-            'Experience true sophistication at our hotel, where every detail is meticulously crafted to provide a lavish escape, featuring stunning architecture, exquisite cuisine, and personalized service.',
-        price: 230.00,
-        quantity: 1),
-    Product(
-        id: 4,
-        name: 'Ghazan Hotels',
-        category: 'Trending now',
-        image: 'assets/images/hotel4.jpg',
-        description:
-            'Elevate your stay with us to new heights of luxury, where panoramic views, lavish amenities, and exceptional service redefine the art of hospitality, ensuring an unforgettable experience',
+            'Beige low-top sneakers with side stripes and a rugged sole, combining comfort with a modern aesthetic.',
         price: 180.00,
         quantity: 1),
     Product(
-        id: 5,
-        name: 'AR Hotels',
+        id: 3,
+        name: 'Luxe Platform Boot',
         category: 'Trending now',
-        image: 'assets/images/hotel5.jpg',
+        image: 'assets/images/Boot3.jpeg',
         description:
-            'Immerse yourself in a world of elegance and refinement at our hotel, where timeless beauty meets contemporary comfort, creating a haven of relaxation and rejuvenation for every guest.',
+            ' Beige platform sneakers with a mix of leather and fabric, offering a chic and elevated casual style.',
+        price: 380.00,
+        quantity: 1),
+    Product(
+        id: 4,
+        name: 'Vintage Combat Boots',
+        category: 'Trending now',
+        image: 'assets/images/Boot4.jpeg',
+        description:
+            'Off-white combat boots with a lace-up design, block heel, and buckle detail, blending vintage and modern styles.',
+        price: 230.00,
+        quantity: 1),
+    Product(
+        id: 5,
+        name: 'Steampunk Artisan Boots',
+        category: 'Trending now',
+        image: 'assets/images/Boot5.jpeg',
+        description:
+            'Brown leather boots with multiple straps, buckles, and studs, featuring a unique steampunk-inspired design.',
         price: 180.00,
         quantity: 1),
   ];

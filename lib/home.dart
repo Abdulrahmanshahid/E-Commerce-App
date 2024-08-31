@@ -19,7 +19,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('E-Commerce Shop'),
+        title: const Text(
+          'E-Commerce Shop',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontSize: 22,
+          ),
+        ),
         centerTitle: true,
         backgroundColor: Colors.red,
         actions: [
@@ -48,8 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   buildProductCategory(index: 0, name: "All"),
-                  buildProductCategory(index: 1, name: "Marriage Hall"),
-                  buildProductCategory(index: 2, name: "Hotels"),
+                  buildProductCategory(index: 1, name: "Boots"),
+                  buildProductCategory(index: 2, name: "Sneakers"),
                 ],
               ),
             ),
@@ -72,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: GestureDetector(
         onTap: () => setState(() => isSelected = index),
         child: Container(
-          width: 110,
+          width: 100,
           height: 50,
           margin: const EdgeInsets.only(top: 10, right: 10),
           alignment: Alignment.center,
